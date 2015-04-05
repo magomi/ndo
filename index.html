@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ndo machine</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .c1 {
+                color: #2C56B8;
+            }
+            body {
+                background: #FF9226;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"><span onClick="nein.play()"><i class="c1 fa fa-play-circle-o fa-5x"></i></span></div>
+                <div class="col-xs-4"><span onclick="doch.play()"><i class="c1 fa fa-play-circle-o fa-5x"></i></span></div>
+                <div class="col-xs-4"><span onclick="ohhh.play()"><i class="c1 fa fa-play-circle-o fa-5x"></i></span></div>
+            </div>
+        </div>
+        <audio id="nein" src="media/nein.mp3" preload="auto"></audio>
+        <audio id="doch" src="media/doch.mp3" preload="auto"></audio>
+        <audio id="ohhh" src="media/ohhh.mp3" preload="auto"></audio>
+    </body>
+    <script>
+        var nein = document.getElementById('nein');
+        var doch = document.getElementById('doch');
+        var ohhh = document.getElementById('ohhh');
+    </script>
+</html>
+
